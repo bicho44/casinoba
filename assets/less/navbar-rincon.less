@@ -1,0 +1,405 @@
+// Alternate navbars
+// --------------------------------------------------
+
+// Default navbar
+.navbar-default {
+  background-color: @navbar-default-bg;
+  border-color: @navbar-default-border;
+
+  .navbar-brand {
+    color: @navbar-default-brand-color;
+    &:hover,
+    &:focus {
+      color: @navbar-default-brand-hover-color;
+      background-color: @navbar-default-brand-hover-bg;
+    }
+  }
+
+  .navbar-text {
+    color: @navbar-default-color;
+  }
+
+  .navbar-nav {
+    > li > a {
+      color: @navbar-default-link-color;
+
+      &:hover,
+      &:focus {
+        color: @navbar-default-link-hover-color;
+        background-color: @navbar-default-link-hover-bg;
+      }
+    }
+    > .active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: @navbar-default-link-active-color;
+        background-color: @navbar-default-link-active-bg;
+      }
+    }
+    > .disabled > a {
+      &,
+      &:hover,
+      &:focus {
+        color: @navbar-default-link-disabled-color;
+        background-color: @navbar-default-link-disabled-bg;
+      }
+    }
+  }
+
+  .navbar-toggle {
+    border-color: @navbar-default-toggle-border-color;
+    &:hover,
+    &:focus {
+      background-color: @navbar-default-toggle-hover-bg;
+    }
+    .icon-bar {
+      background-color: @navbar-default-toggle-icon-bar-bg;
+    }
+  }
+
+  .navbar-collapse,
+  .navbar-form {
+    border-color: @navbar-default-border;
+  }
+
+  // Dropdown menu items
+  .navbar-nav {
+    // Remove background color from open dropdown
+    > .open > a {
+      &,
+      &:hover,
+      &:focus {
+        background-color: @navbar-default-link-active-bg;
+        color: @navbar-default-link-active-color;
+      }
+    }
+
+    @media (max-width: @grid-float-breakpoint-max) {
+      // Dropdowns get custom display when collapsed
+      .open .dropdown-menu {
+        > li > a {
+          color: @navbar-default-link-color;
+          &:hover,
+          &:focus {
+            color: @navbar-default-link-hover-color;
+            background-color: @navbar-default-link-hover-bg;
+          }
+        }
+        > .active > a {
+          &,
+          &:hover,
+          &:focus {
+            color: @navbar-default-link-active-color;
+            background-color: @navbar-default-link-active-bg;
+          }
+        }
+        > .disabled > a {
+          &,
+          &:hover,
+          &:focus {
+            color: @navbar-default-link-disabled-color;
+            background-color: @navbar-default-link-disabled-bg;
+          }
+        }
+      }
+    }
+  }
+
+
+  // Links in navbars
+  //
+  // Add a class to ensure links outside the navbar nav are colored correctly.
+
+  .navbar-link {
+    color: @navbar-default-link-color;
+    &:hover {
+      color: @navbar-default-link-hover-color;
+    }
+  }
+
+  .btn-link {
+    color: @navbar-default-link-color;
+    &:hover,
+    &:focus {
+      color: @navbar-default-link-hover-color;
+    }
+    &[disabled],
+    fieldset[disabled] & {
+      &:hover,
+      &:focus {
+        color: @navbar-default-link-disabled-color;
+      }
+    }
+  }
+}
+
+// Rincon navbar
+// --------------------------------------------------
+
+.navbar-secundario {
+  background-color: @navbar-secundario-bg;
+  border-color: @navbar-secundario-border;
+
+  .navbar-brand {
+    color: @navbar-secundario-brand-color;
+    &:hover,
+    &:focus {
+      color: @navbar-secundario-brand-hover-color;
+      background-color: @navbar-secundario-brand-hover-bg;
+    }
+  }
+
+  .navbar-text {
+    color: @navbar-secundario-color;
+  }
+
+  .navbar-nav {
+    > li > a {
+      color: @navbar-secundario-link-color;
+
+      &:hover,
+      &:focus {
+        color: @navbar-secundario-link-hover-color;
+        background-color: @navbar-secundario-link-hover-bg;
+      }
+    }
+    > .active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: @navbar-secundario-link-active-color;
+        background-color: @navbar-secundario-link-active-bg;
+      }
+    }
+    > .disabled > a {
+      &,
+      &:hover,
+      &:focus {
+        color: @navbar-secundario-link-disabled-color;
+        background-color: @navbar-secundario-link-disabled-bg;
+      }
+    }
+  }
+
+  .navbar-toggle {
+    border-color: @navbar-secundario-toggle-border-color;
+    &:hover,
+    &:focus {
+      background-color: @navbar-secundario-toggle-hover-bg;
+    }
+    .icon-bar {
+      background-color: @navbar-secundario-toggle-icon-bar-bg;
+    }
+  }
+
+  .navbar-collapse,
+  .navbar-form {
+    border-color: @navbar-secundario-border;
+  }
+
+  // Dropdown menu items
+  .navbar-nav {
+    // Remove background color from open dropdown
+    > .open > a {
+      &,
+      &:hover,
+      &:focus {
+        background-color: @navbar-secundario-link-active-bg;
+        color: @navbar-secundario-link-active-color;
+      }
+    }
+
+    @media (max-width: @grid-float-breakpoint-max) {
+      // Dropdowns get custom display when collapsed
+      .open .dropdown-menu {
+        > li > a {
+          color: @navbar-secundario-link-color;
+          &:hover,
+          &:focus {
+            color: @navbar-secundario-link-hover-color;
+            background-color: @navbar-secundario-link-hover-bg;
+          }
+        }
+        > .active > a {
+          &,
+          &:hover,
+          &:focus {
+            color: @navbar-secundario-link-active-color;
+            background-color: @navbar-secundario-link-active-bg;
+          }
+        }
+        > .disabled > a {
+          &,
+          &:hover,
+          &:focus {
+            color: @navbar-secundario-link-disabled-color;
+            background-color: @navbar-secundario-link-disabled-bg;
+          }
+        }
+      }
+    }
+  }
+
+
+  // Links in navbars
+  //
+  // Add a class to ensure links outside the navbar nav are colored correctly.
+
+  .navbar-link {
+    color: @navbar-secundario-link-color;
+    &:hover {
+      color: @navbar-secundario-link-hover-color;
+    }
+  }
+
+  .btn-link {
+    color: @navbar-secundario-link-color;
+    &:hover,
+    &:focus {
+      color: @navbar-secundario-link-hover-color;
+    }
+    &[disabled],
+    fieldset[disabled] & {
+      &:hover,
+      &:focus {
+        color: @navbar-secundario-link-disabled-color;
+      }
+    }
+  }
+}
+
+// Rincon 3 navbar
+// --------------------------------------------------
+
+.navbar-rincon3 {
+  background-color: @navbar-rincon3-bg;
+  border-color: @navbar-rincon3-border;
+
+  .navbar-brand {
+    color: @navbar-rincon3-brand-color;
+    &:hover,
+    &:focus {
+      color: @navbar-rincon3-brand-hover-color;
+      background-color: @navbar-rincon3-brand-hover-bg;
+    }
+  }
+
+  .navbar-text {
+    color: @navbar-rincon3-color;
+  }
+
+  .navbar-nav {
+    > li > a {
+      color: @navbar-rincon3-link-color;
+
+      &:hover,
+      &:focus {
+        color: @navbar-rincon3-link-hover-color;
+        background-color: @navbar-rincon3-link-hover-bg;
+      }
+    }
+    > .active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: @navbar-rincon3-link-active-color;
+        background-color: @navbar-rincon3-link-active-bg;
+      }
+    }
+    > .disabled > a {
+      &,
+      &:hover,
+      &:focus {
+        color: @navbar-rincon3-link-disabled-color;
+        background-color: @navbar-rincon3-link-disabled-bg;
+      }
+    }
+  }
+
+  .navbar-toggle {
+    border-color: @navbar-rincon3-toggle-border-color;
+    &:hover,
+    &:focus {
+      background-color: @navbar-rincon3-toggle-hover-bg;
+    }
+    .icon-bar {
+      background-color: @navbar-rincon3-toggle-icon-bar-bg;
+    }
+  }
+
+  .navbar-collapse,
+  .navbar-form {
+    border-color: @navbar-rincon3-border;
+  }
+
+  // Dropdown menu items
+  .navbar-nav {
+    // Remove background color from open dropdown
+    > .open > a {
+      &,
+      &:hover,
+      &:focus {
+        background-color: @navbar-rincon3-link-active-bg;
+        color: @navbar-rincon3-link-active-color;
+      }
+    }
+
+    @media (max-width: @grid-float-breakpoint-max) {
+      // Dropdowns get custom display when collapsed
+      .open .dropdown-menu {
+        > li > a {
+          color: @navbar-rincon3-link-color;
+          &:hover,
+          &:focus {
+            color: @navbar-rincon3-link-hover-color;
+            background-color: @navbar-rincon3-link-hover-bg;
+          }
+        }
+        > .active > a {
+          &,
+          &:hover,
+          &:focus {
+            color: @navbar-rincon3-link-active-color;
+            background-color: @navbar-rincon3-link-active-bg;
+          }
+        }
+        > .disabled > a {
+          &,
+          &:hover,
+          &:focus {
+            color: @navbar-rincon3-link-disabled-color;
+            background-color: @navbar-rincon3-link-disabled-bg;
+          }
+        }
+      }
+    }
+  }
+
+
+  // Links in navbars
+  //
+  // Add a class to ensure links outside the navbar nav are colored correctly.
+
+  .navbar-link {
+    color: @navbar-rincon3-link-color;
+    &:hover {
+      color: @navbar-rincon3-link-hover-color;
+    }
+  }
+
+  .btn-link {
+    color: @navbar-rincon3-link-color;
+    &:hover,
+    &:focus {
+      color: @navbar-rincon3-link-hover-color;
+    }
+    &[disabled],
+    fieldset[disabled] & {
+      &:hover,
+      &:focus {
+        color: @navbar-rincon3-link-disabled-color;
+      }
+    }
+  }
+}

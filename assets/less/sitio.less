@@ -1,0 +1,306 @@
+/*.element {
+  -webkit-animation: KEYFRAME-NAME 2s infinite;
+  -moz-animation:    KEYFRAME-NAME 5s infinite;
+  -o-animation:      KEYFRAME-NAME 5s infinite;
+  animation:         KEYFRAME-NAME 5s infinite;
+}*/
+h1,h2,h3,h4,h5 {
+  text-transform: uppercase;
+  color:@amarillo;
+}
+h6 {
+  font-family: @font-family-base;
+  font-size: 16px;
+  color:@amarillo;
+}
+
+
+.site-header{
+  margin-top: 22px;
+  background-color: @white;
+}
+
+.navbar-brand{
+  > img {
+    position: relative;
+    top:-15px;
+  }
+}
+
+.navbar-nav {
+  a {
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+}
+
+.wpgmza_sl_main_div {
+  display: none;
+}
+
+#SlideShow {
+  margin-bottom: 15px;
+
+  .carousel-caption {
+    color: #fff;
+    background: rgba(0,0,0,.5);
+
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}
+
+.destacados {
+  img{.img-responsive;}
+}
+
+.novedades,
+.proximosShows{
+  display: block;
+  overflow: hidden;
+}
+
+.novedades,
+.proximosShows,
+article .entry-content,
+.widget,
+#pozos {
+  border: 2px solid @color-lineas;
+  background-color: @color-fondo-contenido;
+}
+
+article .entry-content,
+.novedades {
+
+  padding: 10px;
+
+  h1 {color:@amarillo;  }
+
+  //h4 { margin-bottom: 0;}
+  h2 {
+    //margin-top: 0;
+    color:@amarillo;
+  }
+
+  img {
+    .img-responsive;
+    margin-bottom: 10px;
+  }
+}
+.site-main {
+  margin-bottom: 15px;
+}
+.show-content{
+
+  footer{
+    border-bottom: 1px solid #fff;
+  }
+}
+
+#front-secondary{
+  padding-top: 20px;
+}
+
+.widget-area {
+  padding: 0 10px 10px 10px;
+  /*margin-top: 10px;*/
+
+  &:first-child {
+    margin-top: 0;
+  }
+  h3, h4{
+    color: #fff;
+  }
+  h2 {
+    font-size: 22px;
+    margin-top: 0;
+  }
+
+  .widget{
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+}
+
+
+.widget_pippin_cpt_calendar {
+
+  #wp-calendar {
+
+    caption {
+      font-size: 24px;
+      text-align: center;
+    }
+
+    th,
+    td {
+      text-align: center;
+      padding: 10px;
+
+      a {
+        padding: 10px;
+        color: #fff;
+        background-color: darken(spin(@amarillo, -10%),15%);
+        border-radius: 25%;
+      }
+
+    }
+    td#prev a, td#next a{
+      background-color: transparent;
+      border-radius: 0;
+    }
+  }
+
+}
+//----------- Affix
+
+// Solo en desktop o tabletas apaisadas
+@media (min-width: @screen-md-min) {
+
+  .affix-top {
+    position: relative;
+  }
+
+  .affix {
+    top: 80px;
+  }
+
+  .affix-bottom {
+    position: absolute;
+  }
+  .affix,
+  .affix-bottom {
+    width: 370px;
+  }
+}
+//***************
+
+.image-thumbnail {
+  margin-bottom: 20px;
+}
+
+.well {
+  color:@color-fondo;
+  font-size: 12px;
+}
+
+.modal{
+  color:@color-fondo;
+  h4 {
+    color:@color-fondo;
+  }
+}
+
+//-------------- Shows Ticker -------------//
+.news-item {
+  /*border-bottom: 1px dotted #fff;*/
+  padding-bottom: 5px;
+  .clearfix();
+
+  h3 {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    color: @amarillo;
+
+  }
+  h4 {margin-bottom: 1px;}
+  h5 {margin-top: 1px;}
+
+  a {
+    /*h3{color:@amarillo;}*/
+    text-decoration: none;
+  }
+
+  img {
+    float: left;
+    border: 3px solid @color-lineas;
+    margin-right: 10px;
+  }
+
+}
+
+.show_data {
+  padding: 10px 0;
+  h4 {margin-top: 10px;}
+  h5 {margin-bottom: 5px;}
+
+}
+
+//-------------- novedades -------------//
+#novedades {
+  padding: 15px 0;
+  img{
+    min-width: 100%;
+  }
+}
+
+
+#pozos {
+  padding: 5px 10px;
+
+  .casino_name,
+  .casino_pozo,
+  .casino_sector {
+    text-transform: uppercase;
+  }
+  .casino_name {
+    font-family: @font-casino;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1;
+  }
+  .casino_pozo {
+    font-family: @font-casino;
+    font-weight: 700;
+    color: @amarillo;
+    font-size: 28px;
+    line-height: 1.2;
+
+    @media all and (min-width: 992px)
+    {
+      font-size: 24px;
+    }
+
+  }
+  .casino_sector {
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .casino_logo {
+    margin-right: 10px;
+  }
+
+}
+
+//------------- FOOTER ----------//
+.site-footer{
+  padding: 20px 0;
+  color: @white;
+  text-align: center;
+
+  .logo-pie {
+    padding: 15px 0;
+    background-image: url('../images/fondo-logo-pie.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+  }
+  .secondary {
+    padding: 10px 0;
+    font-family: 'Open Sans Condensed', sans-serif;
+  }
+
+  a {
+    color: @white;
+    text-transform: uppercase;
+  }
+
+  .site-info {
+    text-align: center;
+
+    font-size: 10px;
+  }
+}
